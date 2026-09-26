@@ -1,0 +1,14 @@
+---
+title: "YOUR TITLE GOES HERE"
+---
+
+My name is Juan Gatica. I am currently a grad student at the Zicklin School of Business, majoring in Quantitative Methods & Modeling. I come from a public health background, having graduated from the NYU College of Global Public Health with a Master's of Public Health Degree in Epidemiology. I have a passion for research in the field of addiction, particularly opioids, and for understanding the determinants of health that accompany addiction. 
+
+
+```{r}
+#| include: false
+1+1
+```
+--------------
+Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
+
