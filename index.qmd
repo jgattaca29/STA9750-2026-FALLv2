@@ -2,7 +2,9 @@
 title: "YOUR TITLE GOES HERE"
 ---
 
-My name is Juan Gatica. I am currently a grad student at the Zicklin School of Business, majoring in Quantitative Methods & Modeling. I come from a public health background, having graduated from the NYU College of Global Public Health with a Master's of Public Health Degree in Epidemiology. I have a passion for research in the field of addiction, particularly opioids, and for understanding the determinants of health that accompany addiction. 
+My name is Juan Gatica. I am currently a grad student at the Zicklin School of Business, majoring in Quantitative Methods & Modeling. I come from a public health background, having graduated from the NYU College of Global Public Health with a Master's of Public Health Degree in Epidemiology. I have a passion for research in the field of addiction, particularly opioids, and for understanding the determinants of health that accompany addiction. I aim to tackle this issue via quantitative analysis techniques combined with my public health expertise. 
+
+As for other aspects about me, I love live sports and videogames. I have taken a liking to baseball statistics and I am a life-long JRPG fan of games such as Final Fantasy. 
 
 
 ```{r}
@@ -11,4 +13,15 @@ My name is Juan Gatica. I am currently a grad student at the Zicklin School of B
 ```
 --------------
 Last Updated: `r format(Sys.time(), "%A %m %d, %Y at %H:%M%p")`
+
+for(n in 1:4) {
+  fname <- sprintf("mp0%g.qmd", n)
+  if(file.exists(fname)) stop(fname, "found. Please contact instructor for advice.")
+  writeLines(sprintf('---
+title: "Mini-Project Placeholder"
+---
+
+This is a placeholder for STA9750 Mini-Project %g. Check back soon for more!', n), fname)
+  quarto::quarto_render(fname)
+}
 
